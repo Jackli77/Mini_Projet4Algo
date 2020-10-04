@@ -43,17 +43,16 @@ class sortTest {
         quickSort.sort(unit_arr);
         assertArrayEquals(new int[] {1}, unit_arr);
     }
-    /* pour vos tests
     @Test
-    void algoTest() {
-        quickSort.sort(bigg_arr);
+    void shellSortTest() {
+        shellSort sh  = new shellSort();
+        sh.sort(bigg_arr);
         assertArrayEquals(bigg_arr_sorted, bigg_arr);
 
-        quickSort.sort(empty_arr);
+        sh.sort(empty_arr);
         assertArrayEquals(new int[0], empty_arr);
 
-        quickSort.sort(unit_arr);
+        sh.sort(unit_arr);
         assertArrayEquals(new int[] {1}, unit_arr);
     }
-     */
 }

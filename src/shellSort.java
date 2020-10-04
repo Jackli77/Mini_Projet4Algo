@@ -1,4 +1,4 @@
-public class ShellSort {
+public class shellSort {
     public void sort(int[] array){
         int gap = array.length/2;
         while(gap > 0){
@@ -26,7 +26,7 @@ public class ShellSort {
         System.out.println("Array before sorting");
         printArray(arr);
 
-        ShellSort ob = new ShellSort();
+        shellSort ob = new shellSort();
         ob.sort(arr);
 
         System.out.println("Array after sorting");
