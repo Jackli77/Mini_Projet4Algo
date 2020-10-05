@@ -1,3 +1,4 @@
+//Author Benoit Schoeps
 public class selectionSort {
 
     public void sort(int[] tab){

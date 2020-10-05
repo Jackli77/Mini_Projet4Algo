@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
+//Author Robin Verschuren
 class sortTest {
-    private  int[] bigg_arr;
+    private int[] bigg_arr;
     private int[] empty_arr;
     private int[] bigg_arr_sorted;
     private int[] unit_arr;
@@ -18,8 +18,8 @@ class sortTest {
 
         Random rand = new Random(40);
         empty_arr = new int[0];
-        bigg_arr = new int[100000];
-        bigg_arr_sorted = new int[100000];
+        bigg_arr = new int[10000];
+        bigg_arr_sorted = new int[10000];
         unit_arr = new int[] {1};
 
         for (int i = 0; i < bigg_arr.length; i++) {

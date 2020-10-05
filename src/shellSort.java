@@ -1,3 +1,4 @@
+//Author Guang Li
 public class shellSort {
     public void sort(int[] array){
         int gap = array.length/2;
@@ -21,8 +22,8 @@ public class shellSort {
         System.out.print("\n");
     }
 
-    public static void main(String args[]) {
-        int arr[] = {12, 34, 54, 2, 3};
+    public static void main(String[] args) {
+        int[] arr = {12, 34, 54, 2, 3};
         System.out.println("Array before sorting");
         printArray(arr);
 
