@@ -1,14 +1,12 @@
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class sortTest {
-
     private  int[] bigg_arr;
     private int[] empty_arr;
     private int[] bigg_arr_sorted;
@@ -20,8 +18,8 @@ class sortTest {
 
         Random rand = new Random(40);
         empty_arr = new int[0];
-        bigg_arr = new int[1000];
-        bigg_arr_sorted = new int[1000];
+        bigg_arr = new int[100000];
+        bigg_arr_sorted = new int[100000];
         unit_arr = new int[] {1};
 
         for (int i = 0; i < bigg_arr.length; i++) {
@@ -46,6 +44,18 @@ class sortTest {
     @Test
     void shellSortTest() {
         shellSort sh  = new shellSort();
+        sh.sort(bigg_arr);
+        assertArrayEquals(bigg_arr_sorted, bigg_arr);
+
+        sh.sort(empty_arr);
+        assertArrayEquals(new int[0], empty_arr);
+
+        sh.sort(unit_arr);
+        assertArrayEquals(new int[] {1}, unit_arr);
+    }
+    @Test
+    void selectionSortTest() {
+        selectionSort sh  = new selectionSort();
         sh.sort(bigg_arr);
         assertArrayEquals(bigg_arr_sorted, bigg_arr);
 
