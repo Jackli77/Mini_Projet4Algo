@@ -1,6 +1,6 @@
 // Louis Colinet
 
-public class InsertionSort {
+public class insertionSort {
 
     public static void sort(int[] a){
         int l = a.length;
